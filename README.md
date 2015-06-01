@@ -52,7 +52,7 @@ See the HAProxy stats:
     # Press CTRL+C
 
     sudo su
-    echo show stat | socat /var/lib/haproxy/stats.sock stdio | grep http,BACKEND
+    watch -n 2 "echo show stat | socat /var/lib/haproxy/stats.sock stdio | grep http,BACKEND"
 
     # Observe the http backend bytes out (column 10)
     # It should be going up
@@ -66,7 +66,7 @@ See the HAProxy stats:
     # Press CTRL+C
 
     sudo su
-    echo show stat | socat /var/lib/haproxy/stats.sock stdio | grep http,BACKEND
+    watch -n 2 "echo show stat | socat /var/lib/haproxy/stats.sock stdio | grep http,BACKEND"
 
     # Observe the http backend bytes out (column 10)
     # It should be going not be going up
