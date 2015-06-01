@@ -5,6 +5,13 @@ Demo showing how to setup redundant HAProxy servers to load-balance traffic betw
 
 Most of the setup is based on this blog post: [HAProxy and Keepalived: Example Configuration](http://andyleonard.com/2011/02/01/haproxy-and-keepalived-example-configuration/)
 
+Pre-requisites:
+---------------
+
+* [Vagrant](https://www.vagrantup.com/) - 1.6.5+
+* [vagrant-cachier](https://github.com/fgrehm/vagrant-cachier) plugin (optional install)
+  * `vagrant plugin install vagrant-cachier`
+
 Setup:
 ------
 
